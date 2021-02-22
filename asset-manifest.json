@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/GGAssess/static/css/main.59abb482.chunk.css",
-    "main.js": "/GGAssess/static/js/main.84c46724.chunk.js",
-    "main.js.map": "/GGAssess/static/js/main.84c46724.chunk.js.map",
+    "main.js": "/GGAssess/static/js/main.fa50bfa1.chunk.js",
+    "main.js.map": "/GGAssess/static/js/main.fa50bfa1.chunk.js.map",
     "runtime-main.js": "/GGAssess/static/js/runtime-main.be1f44b4.js",
     "runtime-main.js.map": "/GGAssess/static/js/runtime-main.be1f44b4.js.map",
-    "static/js/2.f436e462.chunk.js": "/GGAssess/static/js/2.f436e462.chunk.js",
-    "static/js/2.f436e462.chunk.js.map": "/GGAssess/static/js/2.f436e462.chunk.js.map",
+    "static/js/2.7fd4d2b7.chunk.js": "/GGAssess/static/js/2.7fd4d2b7.chunk.js",
+    "static/js/2.7fd4d2b7.chunk.js.map": "/GGAssess/static/js/2.7fd4d2b7.chunk.js.map",
     "index.html": "/GGAssess/index.html",
     "static/css/main.59abb482.chunk.css.map": "/GGAssess/static/css/main.59abb482.chunk.css.map",
-    "static/js/2.f436e462.chunk.js.LICENSE.txt": "/GGAssess/static/js/2.f436e462.chunk.js.LICENSE.txt"
+    "static/js/2.7fd4d2b7.chunk.js.LICENSE.txt": "/GGAssess/static/js/2.7fd4d2b7.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.be1f44b4.js",
-    "static/js/2.f436e462.chunk.js",
+    "static/js/2.7fd4d2b7.chunk.js",
     "static/css/main.59abb482.chunk.css",
-    "static/js/main.84c46724.chunk.js"
+    "static/js/main.fa50bfa1.chunk.js"
   ]
 }
