@@ -63,7 +63,7 @@ const Books = ({}) => {
 			{error ? (
 				<Alert severity="error">
 					Problem loading the page, please make sure you are connected to
-					internet. If problem persist please contact administrator.
+					internet. If problem persists please contact administrator.
 				</Alert>
 			) : (booksData && booksData.length < 1) || loading ? (
 				<CircularProgress />
