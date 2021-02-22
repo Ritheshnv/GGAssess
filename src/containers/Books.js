@@ -38,24 +38,17 @@ const Books = ({}) => {
 	const loading = booksData.loading;
 	const error = booksData.error;
 
-	const pageNumber =
-		booksData && booksData.pageNumber
-			? booksData.pageNumber
-			: window.location.pathname === "/"
-			? 1
-			: localStorage.getItem("bookPageNumber");
-
-	useEffect(() => {
-		dispatch(booksActions(pageNumber, BOOKS_PER_PAGE, []));
-	}, []);
+	let currentPage = window.location.pathname.split("/").slice(-1)[0]
+		? window.location.pathname.split("/").slice(-1)[0]
+		: 1;
 
 	useEffect(() => {
 		window.scrollTo(0, 0);
 		getBooks();
-	}, [pageNumber]);
+	}, [currentPage]);
 
 	const getBooks = async () => {
-		await booksActions(pageNumber, BOOKS_PER_PAGE, []);
+		await dispatch(booksActions(currentPage, BOOKS_PER_PAGE, []));
 	};
 
 	return (
@@ -89,6 +82,7 @@ const Books = ({}) => {
 					<Pagination
 						booksCount={booksData && booksData.count}
 						booksPerPage={BOOKS_PER_PAGE}
+						pageNumberFromBooks={currentPage}
 					/>
 				</div>
 			)}

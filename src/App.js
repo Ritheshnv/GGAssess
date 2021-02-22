@@ -9,8 +9,8 @@ function App() {
 			<div className="App">
 				<header className="App-header">
 					<Switch>
-						<Route path="/" exact key="1" component={ShowBooks} />
-						<Route path="/:pageNumber" key="2" component={ShowBooks} />
+						<Route path="/GGAssess" exact key="1" component={ShowBooks} />
+						<Route path="/GGAssess/:pageNumber" key="2" component={ShowBooks} />
 					</Switch>
 				</header>
 			</div>
