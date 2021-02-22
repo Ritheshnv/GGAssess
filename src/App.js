@@ -1,11 +1,11 @@
 import "./App.css";
 import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import ShowBooks from "./containers/ShowBooks";
 
 function App() {
 	return (
-		<BrowserRouter>
+		<Router>
 			<div className="App">
 				<header className="App-header">
 					<Switch>
@@ -14,7 +14,7 @@ function App() {
 					</Switch>
 				</header>
 			</div>
-		</BrowserRouter>
+		</Router>
 	);
 }
 

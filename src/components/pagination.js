@@ -10,7 +10,6 @@ const BooksPagination = ({ booksCount, booksPerPage, pageNumberFromBooks }) => {
 	const changeHandler = e => {
 		let baseUrl = e.target.baseURI;
 		let pageNumber = baseUrl.split("/").slice(-1)[0];
-		localStorage.setItem("bookPageNumber", pageNumber);
 		dispatch({ type: GET_PAGE_NUMBER, payload: pageNumber });
 	};
 

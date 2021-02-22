@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { useHistory } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
@@ -32,16 +33,16 @@ const useStyles = makeStyles(theme => ({
 const Books = ({}) => {
 	const classes = useStyles();
 	const dispatch = useDispatch();
+	const history = useHistory();
 
 	const BOOKS_PER_PAGE = 20;
 	const booksData = useSelector(state => state.books);
 	const loading = booksData.loading;
 	const error = booksData.error;
 
-	let currentPage = window.location.pathname.split("/").slice(-1)[0]
-		? window.location.pathname.split("/").slice(-1)[0]
+	let currentPage = history.location.pathname.split("/").slice(-1)[0]
+		? history.location.pathname.split("/").slice(-1)[0]
 		: 1;
-
 	useEffect(() => {
 		window.scrollTo(0, 0);
 		getBooks();
